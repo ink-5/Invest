@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude update:*)",
+      "WebSearch",
+      "Bash(dir:*)",
+      "Bash(mkdir:*)",
+      "Bash(python:*)",
+      "Bash(powershell -Command:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
