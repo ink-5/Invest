@@ -1,12 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "Bash(claude update:*)",
+      "Bash(*)",
+      "WebFetch(*)",
       "WebSearch",
-      "Bash(dir:*)",
-      "Bash(mkdir:*)",
-      "Bash(python:*)",
-      "Bash(powershell -Command:*)"
+      "Bash(python3 -c \" import sys,json try: d=json.load\\(sys.stdin\\) r=d[''quoteSummary''][''result''][0] p=r.get\\(''price'',{}\\) s=r.get\\(''summaryDetail'',{}\\) k=r.get\\(''defaultKeyStatistics'',{}\\) f=r.get\\(''financialData'',\\) print\\(''Price:'', p.get\\(''regularMarketPrice'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''Currency:'', p.get\\(''currency'',''N/A''\\)\\) print\\(''MarketCap:'', p.get\\(''marketCap'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''SharesOut:'', k.get\\(''sharesOutstanding'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''PB:'', k.get\\(''priceToBook'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''DivYield:'', s.get\\(''dividendYield'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''TrailingPE:'', s.get\\(''trailingPE'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''BookValue:'', k.get\\(''bookValue'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''TotalCash:'', f.get\\(''totalCash'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''TotalDebt:'', f.get\\(''totalDebt'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''FCF:'', f.get\\(''freeCashflow'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''OpCF:'', f.get\\(''operatingCashflow'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''Revenue:'', f.get\\(''totalRevenue'',{}\\).get\\(''raw'',''N/A''\\)\\) print\\(''NetIncome:'', f.get\\(''netIncomeToCommon'',{}\\).get\\(''raw'',''N/A''\\)\\) except Exception as e: print\\(''Error:'',e\\) \")"
     ],
     "deny": [],
     "ask": []
